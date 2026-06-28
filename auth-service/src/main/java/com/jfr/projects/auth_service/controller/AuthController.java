@@ -4,18 +4,17 @@ package com.jfr.projects.auth_service.controller;
 import com.jfr.projects.auth_service.dto.LoginRequestDto;
 import com.jfr.projects.auth_service.dto.RegisterRequestDto;
 import com.jfr.projects.auth_service.service.AuthService;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class UserController {
+public class AuthController {
 
     private final AuthService authService;
 
     @Autowired
-    public UserController(AuthService authService){
+    public AuthController(AuthService authService){
         this.authService = authService;
     }
 
